@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Vivek Shah</title>
+<meta name="keywords" content="HTML, CSS, XHTML, JavaScript" />
+<meta name="description" content="Academic homepage of Vivek Shah at Copenhagen university" />
+<meta name="author" content="Vivek Shah homepage computer science copenhagen university bonii" />
+<style type="text/css">
+p {text-align: justify}
+</style>
+</head>
+
+<body>
+
+<div>
+<table width="100%">
+  <tr>
+    <td style="width:35%">
+      <img src="images/profile.jpg" alt="That's me" /><br/>
+      A pictorial representation of myself (<em>at some point of time in the past</em>)
+    </td>
+    <td align="left" style="width:30%">
+      <h1>Vivek Shah</h1>
+      <a href="http://www.diku.dk/english/research/apl-group/dms/">Data Management Systems (DMS) Group</a><br />
+      <a href="http://www.diku.dk/english/">Department of Computer Science</a><br />
+      <a href="http://www.ku.dk/english/">University of Copenhagen</a><br />
+    </td>
+
+    <td style="width:35%">
+      <h3>Address</h3>
+      Department of Computer Science (DIKU)<br />
+      University of Copenhagen<br />
+      Universitetsparken 5<br />
+      HC&#216;,  building B, room 01-0-025 <br />
+      DK-2100 Copenhagen <br />
+      Denmark <br /><br />
+      <strong>Email: </strong><img src="images/my_email_image.png" alt="My email" />
+    </td>
+  </tr>
+  </table>
+</div>
+
+<div>
+  <h2>Welcome to my homepage</h2>
+  <ul>
+    <li><a href="#me">About me</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#teaching">Teaching and mentoring experiences</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#talks">Talks and presentations</a></li>
+    <li><a href="#personal">Personal</a></li>
+    <li><a href="#updates">Recent Updates</a></li>
+  </ul>
+</div>
+
+<div>
+  <h2 id="me">A Brief History of me</h2>
+ <p>I am a <a href="http://phdcomics.com/comics.php?f=1744">postdoc</a> in the DMS group where my work targets main-memory and spatial database systems. Currently I am working with the new database system vision of <a href="https://arxiv.org/abs/1707.06507">actor database systems</a> and on projects in <a href="https://futurecropping.dk/en/">precision agriculture</a>. I am interested in building systems especially distributed data driven systems which leverage modern hardware architecture and address problems faced by current application stacks. I am currently examining the design implications of traditional database system mechanisms of concurrency control, logging, query planning and optimization in the context of actor database systems especially <a href="https://arxiv.org/abs/1701.05397"><strong>ReactDB</strong></a>.</p>
+  <p>Previously, I was a <a href="http://phdcomics.com/comics/archive.php?comicid=1379">doctoral student</a> in the <a href="http://www.diku.dk/english/research/apl-group/">APL group</a> within the <a href="http://www.diku.dk/english/">Department of Computer Science </a> at the <a href="http://www.ku.dk/english/">University of Copenhagen</a> where I was supervised by <a href="http://www.diku.dk/~vmarcos/">Marcos Vaz Salles</a> and <a href="http://www.diku.dk/~henglein/">Fritz Henglein</a>. My thesis envisioned the idea of integrating actor programming model in relational database to improve its programmability without sacrificing performance which led to the development of <strong>ReactDB</strong>. I was also known for trolling the <a href="http://hiperfit.dk/">HIPERFIT group</a>.</p>
+  <p>I finished my M.Sc in Computer Science from the University of Copenhagen with a specialization in <a href="http://www.diku.dk/english/Studyprogrammes/uddannelse03/pls_competence_profile/">Programming languages and Systems</a> in November, 2012. I completed my Bachelor of Technology in Computer Science and Engineering from <a href="http://nith.ac.in/">NIT Hamirpur</a> in 2008. I was born in <a href="http://en.wikipedia.org/wiki/Kolkata">Kolkata</a> in eastern India. I grew up and spent my entire childhood and teenage years in the quiet town of <a href="http://en.wikipedia.org/wiki/Naihati">Naihati</a> beside the mythological well known old river <a href="http://en.wikipedia.org/wiki/Ganges">Ganges</a>. And before you get any wrong notions, I am not a holy man out to save your souls.
+  </p>
+</div>
+
+<div>
+  <h2 id="projects">Projects</h2>
+  <ul>
+    <li id="phdthesis"><p><strong>Actor Database Systems</strong><br/>
+	In this project, I am investigating the potential of introducing an actor-oriented programming model in database systems in the context of evolving heterogeneous hardware deployment architectures and online applications. We are also studying novel architectures for main memory transaction processing clouds that allow ease of administration, high resource utiliziation and a flexible programming model with predictable performance guarantees. Our vision about the project can be found in <a href="https://arxiv.org/abs/1707.06507">this paper</a>. We have also built a prototype in-memory actor OLTP database system for multicores <strong>(ReactDB)</strong> to demonstrate the properties outlined above. More details about the system can be found in <a href="https://arxiv.org/abs/1701.05397">this paper</a>.</p></li>
+    <li id="masterthesis"><p><strong>Adaptive Auto-partitioning in Distributed Transactional Data Stores</strong><br/>
+	I worked on this project during my Master's thesis under the supervision of Marcos Vaz Salles, my current Ph.D. supervisor. The project tries to experiment with the viability of building distributed scalable transaction processing system. The project was motivated by the idea behind <a href="http://hstore.cs.brown.edu/">H-Store</a>. The project resulted in building Memstore, a distributed main memory based architecture supporting transaction processing. Memstore provides adaptive auto-partitioning i.e. the data store re-partitions itself over time in order to guarantee performance. The result of the project is Memstore which provides an experimental testbed for building adaptive auto-partitioning algorithms. The brief synopsis of the project is <a href="http://bonii.kompiler.org/shared/synopsis.pdf/">here</a>. I am planning to make my thesis public (including the code) as soon as I get over my laziness to fix the copyright messages in the document.</p></li>
+    <li id="masterproject"><p><strong>Practical Applications of the Fourth Futumura Projection</strong><br/>
+	I worked on this project during my Master's degree for a 15 ECTS project for 3 months along with <a href="http://www.razzeal.org/">Tim van Deurzen</a> under the supervision of <a href="http://www.diku.dk/english/staff/beskrivelse/?id=146978/">Robert Glueck</a>.The project aims to undestand the extension of the existing <a href="http://en.wikipedia.org/wiki/Partial_evaluation#Futamura_projections">Futumura projections</a>. It based on <a href="http://dl.acm.org/citation.cfm?id=1480954">this paper</a> by Robert Glueck. In this project, we analysed the possible use cases of the Fourth Futumura projection. In order to experiment with the fourth Futumura projection, we built specializers for some experimental DSL in C. Using CMix, we could generate cross compilers to convert a program in the DSL to C. I would put up the report for the project soon here once I fix the copyright notices. The code for the project is hosted <a href="http://git.kompiler.org/pe-gen/">here</a>.</p></li>
+    <li><p><strong>Simple Operating System</strong><br/>
+	I worked on this project which was a <a href="http://archive.systems.ethz.ch/www.systems.ethz.ch/education/hs11/aos.html">semester course</a> at <a href="http://www.ethz.ch/index_EN">ETH Zurich</a> during my Erasmus exchange (within my Master's degree). The project aimed at building major components of a microkernel operating system based on the <a href="http://ertos.nicta.com.au/research/l4">L4 microkernel</a> for an <a href="http://en.wikipedia.org/wiki/NSLU2">NSLU2 slug device</a>. Some of the subsystems built as part of the project included</p>
+      <ul>
+	<li>virtual memory system</li>
+	<li>demand paging system</li>
+	<li>system call interface</li>
+	<li>file system</li>
+	<li>process subsytem</li>
+	<li>timer drivers</li>
+	<li>binary loaders</li>
+      </ul>
+	<p>The report which features greater outline of the project is <a href="http://bonii.kompiler.org/shared/report.pdf">here</a>.The code for the project is hosted <a href="https://github.com/bonii/aos">here</a>.<br />
+    If you are interested in working on this project either as thesis work or just for fun, feel free to drop me an email or meet me.</p></li>
+  </ul>
+</div>
+
+<div>
+  <h2 id="teaching">Teaching experiences</h2>
+  <ul>
+    <li>Lecturer at University of Copenhagen in
+      <ol>
+	<li><a href="http://kurser.ku.dk/course/ndab16005u">Computer Systems</a> during fall 2016 and 2017.</li>
+	<li><a href="http://kurser.ku.dk/course/ndak15000u">Advanced Java</a> during summer 2013, 2014, 2015, 2016 and 2017.</li>
+      </ol></li>
+    <li>Teaching Assistant at University of Copenhagen in
+      <ol>
+	<li><a href="http://kurser.ku.dk/course/ndak15006u">Advanced Computer Systems</a> during fall 2014, 2015 and 2016.</li>
+	<li><a href="http://sis.ku.dk/kurser/viskursus.aspx?knr=143352&amp;languageid=2/">Advanced Algorithms and Data Structures</a> during summer 2012.</li>
+	<li><a href="http://sis.ku.dk/kurser/viskursus.aspx?knr=143504&amp;languageid=2/">Algorithms and Data Structures</a> during summer 2012.</li>
+	<li><a href="http://sis.ku.dk/kurser/viskursus.aspx?knr=143312&amp;languageid=2">Databases and Webprogramming</a> during summer 2012.</li>
+	</ol>
+      </li>
+    </ul>
+  <h3>Mentoring experiences</h3>
+  <p style='color:red'>I am looking for interested B.Sc and M.Sc students interested in <a href="http://www.cs.bell-labs.com/who/rob/utah2000.pdf">building systems</a>. If you are hunting for ideas, look at the <a href="https://diku-dk.github.io/sdps/dms/projects">project themes on offer</a> in the DMS group. If you have your own ideas for a project or would like to work on one of the outlined project themes, feel free to email or meet me.</p>
+</div>
+
+<div>
+  <h2 id="publications">Publications</h2>
+  <ul>
+    <li>Vivek Shah and Marcos Antonio Vaz Salles <br/>
+      <a href="https://arxiv.org/abs/1707.06507">Actor Database Systems: A Manifesto</a><br/>
+      Preliminary Tech Report, 2017.<br/>
+      <a href="https://arxiv.org/abs/1707.06507.pdf"><img src="images/pdf.png" alt="PDF"/>Paper</a>
+    </li>
+    <li>Vivek Shah and Marcos Antonio Vaz Salles <br/>
+      <a href="https://arxiv.org/abs/1701.05397">Reactors: A Case for Predictable, Virtualized Actor Database Systems</a><br/>
+      ACM SIGMOD 2018, Houston, USA. To appear.<br/>
+      <a href="https://dl.acm.org/authorize?N651748"><img src="images/pdf.png" alt="PDF"/>Paper</a>
+      <a href="https://arxiv.org/pdf/1701.05397.pdf"><img src="images/pdf.png" alt="PDF"/>Extended Paper</a>
+      <a href="misc/reactors-poster.pdf"><img src="images/pdf.png" alt="PDF"/>Poster</a>
+      <a href="misc/reactors.pptx"><img src="images/pptx.png" alt="PPTX"/>Slides</a>
+    </li>
+    <li>Phil Bernstein, Sebastian Burckhardt, Sergey Bykov, Jose Faleiro, Gabriel Kliot, Alok Kumbhare, Muntasir Raihan Rahman, Vivek Shah, Adriana Szekeres and Jorgen Thelin<br/>
+      <a href="https://www.microsoft.com/en-us/research/publication/geo-distribution-actor-based-services/">Geo-Distribution of Actor-Based Services</a><br/>
+      ACM OOPSLA 2017, Vancouver, Canada.<br/>
+      <a href="https://dl.acm.org/authorize?N651749"><img src="images/pdf.png" alt="PDF"/>Paper</a>
+    </li>
+    <li>Vivek Shah <br/>
+      <a href="https://arxiv.org/abs/1701.04339">Transactional Partitioning: A New Abstraction for Main-Memory Databases</a><br/>
+      VLDB 2014 PhD workshop, Hangzhou, China.<br/>
+      <b>Awarded best paper runner-up</b><br/>
+      <a href="pubs/S-VLDB14.pdf"><img src="images/pdf.png" alt="PDF"/>Paper</a>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <h2 id="talks">Talks</h2>
+  <ul>
+    <li><a href="http://www.diku.dk/~bonii/misc/hiperfit-transactional-partitioning.pdf">Transactional Partitioning talk</a> at the <a href="http://hiperfit.dk/news/2014/11/04/hiperfit-workshop/">HIPERFIT workshop</a></li>
+    <li><a href="http://bonii.kompiler.org/">My Master's thesis defence talk</a> on <a href="#masterthesis">Adaptive Auto-partitioning in distributed transactional data stores</a> at DIKU on November 19, 2012</li>
+    <li><a href="http://bonii.kompiler.org/shared/fourth-futumura-projection-project.pdf">Project defence talk</a> on the <a href="#masterproject">Fourth Futumura projections</a> at DIKU on June 21, 2012</li>
+  </ul>
+</div>
+
+<div>
+  <h2 id="personal">Personal</h2>
+  <ul>
+    <li><a href="http://www.diku.dk/~bonii/misc/resume.pdf">My CV</a></li>
+    <li><a href="http://bonii.kompiler.org/shared/four-poster-bed.jpg">My really cool bed that I don't have anymore</a></li>
+    <li><a href="http://blog.kernelspace.in/">My primary web log</a></li>
+    <li><a href="http://stories.kernelspace.in/">My attempts at story telling</a></li>
+    <li><a href="http://kernelspace.in/">My web home</a></li>
+    <li><a href="https://www.linkedin.com/pub/vivek-shah/11/4b9/381">My LinkedIn page</a></li>
+  </ul>
+</div>
+
+<div>
+  <h2 id="updates">Recent Updates</h2>
+    <p><strong>[16/06/2018]</strong>I had a great time talking about our work on <a href="https://dl.acm.org/authorize?N651748">ReactDB at SIGMOD 2018 in Houston.</a></p>
+  <p><strong>[17/05/2018]</strong>We have <a href="https://diku-dk.github.io/sdps/dms/projects">a list of project themes on offer</a> for interested B.Sc and M.Sc students in the DMS group. Feel free to contact me if you want to work on them.</p>
+  <p><strong>[01/11/2017]</strong>I have now graduated and am working as postdoctoral researcher at DIKU.</p>
+  <p><strong>[07/06/2015]</strong>Looking forward to the summer internship stint at Microsoft Research, Redmond on <a href="http://research.microsoft.com/en-us/projects/orleans/">Orleans</a>.</p>
+  <p><strong>[07/06/2015]</strong><a href="http://dmslab.github.io/homepage/">DMSLab</a> now has its first graduated PhD student. A big round of applause for <a href="http://skipperkongen.dk/">Kostas</a> for defending his dissertation successfully.</p>
+  <p><strong>[24/11/2014]</strong>OSDI 2014 talks, slides, papers can be found <a href="https://www.usenix.org/conference/osdi14/technical-sessions">here</a>.</p>
+  <p><strong>[24/11/2014]</strong>SOSP 2013 talks are available on <a href="http://www.youtube.com/watch?v=h5BJu0c-UaU&amp;list=PLn0nrSd4xjjZsNjpfWvNEtuBMtKkTd3gW">youtube</a>.</p>
+  <p><strong>[06/08/2014]</strong>Looking forward to attend <a href="http://www.vldb.org/2014/">VLDB</a> in Hangzhou, China this year.</p>
+  <p><strong>[13/11/2013]</strong>The weeklong <b>Advanced Java workshop</b> course from Nov 11- Nov 15, 2013 just ended.</p>
+  <p><strong>[06/09/2013]</strong>There is an <b>Advanced Java workshop</b> course coming up for interested students from Nov 11- Nov 15, 2013.</p>
+  <p><strong>[19/06/2013]</strong>APL group in DIKU now has a shiny new <a href="http://freenode.net/">Freenode</a> channel. Come on <b>#diku-apl</b> if you want to troll.</p>
+  <p><strong>[24/05/2013]</strong>A new systems seminar reading group (will be extended to full blown seminar once we have more people) is <a href="http://bonii.blogs.ku.dk/2013/05/30/diku-systems-seminar">starting up</a>. See <a href="http://dmslab.github.io/diku-systems-seminar/">here.</a> If you are interested, just send an email.</p>
+  <p><strong>[14/05/2013]</strong>I am planning to restart my <a href="http://bonii.blogs.ku.dk/">old blog</a> which I started as a M.Sc student and plan to continue as a PhD student to detail my not so personal experiences in Copenhagen.</p>
+  <p><strong>[12/05/2013]</strong> Looking for Bachelor and Master's students for possible thesis options in systems. </p>
+  <p><strong>[18/03/2013]</strong> I joined the PhD bandwagon in a 3 year sprint to earn a cool degree. </p>
+</div>
+
+<div>
+  <h2 id="non-academic">Non Academic Resources</h2>
+  <ul>
+    <li><a href="http://web.mit.edu/humor/Computers/real.programmers">Programming in Real World</a></li>
+  </ul>
+</div>
+
+<table>
+  <tr>
+    <td>
+      <p>
+	<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+      </p>
+    </td>
+    <td>
+      <p>
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+               src="http://jigsaw.w3.org/css-validator/images/vcss"
+               alt="Valid CSS!" />
+	</a>
+      </p>
+    </td>
+  </tr>
+</table>
+  
+</body>
+</html>
