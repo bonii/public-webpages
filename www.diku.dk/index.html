@@ -46,10 +46,9 @@ p {text-align: justify}
   <h2>Welcome to my homepage</h2>
   <ul>
     <li><a href="#me">About me</a></li>
-    <li><a href="#projects">Projects</a></li>
+    <li><a href="#projects">Current Projects</a></li>
     <li><a href="#teaching">Teaching and mentoring experiences</a></li>
     <li><a href="#publications">Publications</a></li>
-    <li><a href="#talks">Talks and presentations</a></li>
     <li><a href="#personal">Personal</a></li>
     <li><a href="#updates">Recent Updates</a></li>
   </ul>
@@ -59,7 +58,7 @@ p {text-align: justify}
   <h2 id="me">A Brief History of me</h2>
  <p>I am a <a href="http://phdcomics.com/comics.php?f=1744">postdoc</a> in the DMS group where my work targets in-memory relational and spatial database systems. Currently I am working with the new database system vision of <a href="https://arxiv.org/abs/1707.06507">actor database systems</a> and on projects in <a href="https://futurecropping.dk/en/">precision agriculture</a>. I am interested in building systems especially distributed data driven systems which leverage modern hardware architecture and address problems faced by current application stacks. I am currently examining the design implications of traditional database system mechanisms of concurrency control, logging, query planning and optimization in the context of actor database systems especially <a href="https://arxiv.org/abs/1701.05397"><strong>ReactDB</strong></a>.</p>
   <p>Previously, I was a <a href="http://phdcomics.com/comics/archive.php?comicid=1379">doctoral student</a> in the <a href="http://www.diku.dk/english/research/apl-group/">APL group</a> within the <a href="http://www.diku.dk/english/">Department of Computer Science </a> at the <a href="http://www.ku.dk/english/">University of Copenhagen</a> where I was supervised by <a href="http://www.diku.dk/~vmarcos/">Marcos Vaz Salles</a> and <a href="http://www.diku.dk/~henglein/">Fritz Henglein</a>. My thesis envisioned the idea of integrating actor programming model in relational database to improve its programmability without sacrificing performance which led to the development of <strong>ReactDB</strong>. I was also known for trolling the <a href="http://hiperfit.dk/">HIPERFIT group</a>.</p>
-  <p>I finished my M.Sc in Computer Science from the University of Copenhagen with a specialization in <a href="http://www.diku.dk/english/Studyprogrammes/uddannelse03/pls_competence_profile/">Programming languages and Systems</a> in November, 2012. I completed my Bachelor of Technology in Computer Science and Engineering from <a href="http://nith.ac.in/">NIT Hamirpur</a> in 2008. I was born in <a href="http://en.wikipedia.org/wiki/Kolkata">Kolkata</a> in eastern India. I grew up and spent my entire childhood and teenage years in the quiet town of <a href="http://en.wikipedia.org/wiki/Naihati">Naihati</a> beside the mythological famous river <a href="http://en.wikipedia.org/wiki/Ganges">Ganges</a>. 
+  <p>I finished my M.Sc in Computer Science from the University of Copenhagen with a specialization in <a href="http://www.diku.dk/english/Studyprogrammes/uddannelse03/pls_competence_profile/">Programming languages and Systems</a> in November, 2012. I completed my Bachelor of Technology in Computer Science and Engineering from <a href="http://nith.ac.in/">NIT Hamirpur</a> in 2008. I was born in <a href="http://en.wikipedia.org/wiki/Kolkata">Kolkata</a> in eastern India. I grew up and spent my entire childhood and teenage years in the quiet town of <a href="http://en.wikipedia.org/wiki/Naihati">Naihati</a> on the banks of the famous mythological river <a href="http://en.wikipedia.org/wiki/Ganges">Ganges</a>. 
   </p>
 </div>
 
@@ -67,24 +66,15 @@ p {text-align: justify}
   <h2 id="projects">Projects</h2>
   <ul>
     <li id="phdthesis"><p><strong>Actor-Relational Database Systems</strong><br/>
-	In this project, I am investigating the potential of introducing an actor-oriented programming model in database systems in the context of evolving heterogeneous hardware deployment architectures and online applications. We are also studying novel architectures for main memory transaction processing clouds that allow ease of administration, high resource utiliziation and a flexible programming model with predictable performance guarantees. Our vision about the project can be found in <a href="https://arxiv.org/abs/1707.06507">this paper</a>. We have also built a prototype in-memory actor OLTP database system for multicores <strong>(ReactDB)</strong> to demonstrate the properties outlined above. More details about the system can be found in <a href="https://arxiv.org/abs/1701.05397">this paper</a>.</p></li>
-    <li id="masterthesis"><p><strong>Adaptive Auto-partitioning in Distributed Transactional Data Stores</strong><br/>
-	I worked on this project during my Master's thesis under the supervision of Marcos Vaz Salles. The project was motivated by the idea behind <a href="http://hstore.cs.brown.edu/">H-Store</a>. The project resulted in building Memstore, a distributed main memory transaction processing system. Memstore provides adaptive auto-partitioning i.e. the data store re-partitions itself over time in order to guarantee performance. The result of the project is Memstore which provides an experimental testbed for building adaptive auto-partitioning algorithms. The brief synopsis of the project is <a href="http://bonii.kompiler.org/shared/synopsis.pdf/">here</a>. </p></li>
+    <strong>ReactDB</strong> is a scalable high-performance database system that targets modern hardware and enhances their programmability by integrating the concepts of actor programming model and relational data model. My Ph.D. dissertation developed the <a href="https://arxiv.org/abs/1707.06507.pdf">vision</a> for the project and built the <a href="https://dl.acm.org/authorize?N651748">system</a> from the ground up. Multiple research directions are currently being pursued in the project where the design of classical database system components e.g., concurrency control, logging, index-management, distribution and deployment are being redesigned in light of the integration.</p></li>
+    <li id="actordatabases"><p><strong>Virtual Actor Runtime</strong><br/>
+      <strong><a href="https://dotnet.github.io/orleans/">Microsoft Orleans</a></strong> is a distributed, virtual actor run-time designed to build and deploy elastic, fault-tolerant stateful applications in .NET. My research internship at Microsoft Research helped in adding support for <a href="https://dl.acm.org/citation.cfm?doid=3152284.3133931">geo-distribution to the system</a>. Currently, I am also looking into ways of efficiently integrating database functionality like spatial querying and transactions into the system while leveraging properties of the actor programming model in line with the vision of <a href="http://cidrdb.org/cidr2017/papers/p29-bernstein-cidr17.pdf">actor-oriented databases</a>.</p></li>
+    <li id="masterthesis"><p><strong>Adaptive Auto-partitioning in Distributed Transactional Data Stores</strong><br/>        
+	During my Master's thesis I built <strong>Memstore</strong>, a distributed in-memory key-value store supporting transactions. To reduce the impact of distributed transaction co-ordination, Memstore re-partitioned the data based on workload access patterns. The system was designed to be an experimental test-bed for studying adaptive re-partitioning algorithms and their impact on transaction processing in key value stores. The brief synopsis of the project is <a href="http://bonii.kompiler.org/shared/synopsis.pdf/">here</a>. </p></li>
     <li id="masterproject"><p><strong>Practical Applications of the Fourth Futumura Projection</strong><br/>
-	I worked on this project during my Master's degree for a 15 ECTS project for 3 months along with <a href="http://www.razzeal.org/">Tim van Deurzen</a> under the supervision of <a href="http://www.diku.dk/english/staff/beskrivelse/?id=146978/">Robert Glueck</a>.The project aims to undestand the extension of the existing <a href="http://en.wikipedia.org/wiki/Partial_evaluation#Futamura_projections">Futumura projections</a>. It based on <a href="http://dl.acm.org/citation.cfm?id=1480954">this paper</a> by Robert Glueck. In this project, we analysed the possible use cases of the Fourth Futumura projection. In order to experiment with the fourth Futumura projection, we built specializers for some experimental DSL in C. Using CMix, we could generate cross compilers to convert a program in the DSL to C. The code for the project is hosted <a href="http://git.kompiler.org/pe-gen/">here</a>.</p></li>
+	The project aimed to understand the <a href="http://dl.acm.org/citation.cfm?id=1480954">extension of existing Futumura projections</a>. In the project, we experiment with the idea of the fourth Futumura projection by building specializers for some experimental DSL in C. Using CMix, we could generate cross compilers to convert a program in the DSL to C. I worked on this project during my Master's studies along with <a href="http://www.razzeal.org/">Tim van Deurzen</a> under the supervision of <a href="http://www.diku.dk/english/staff/beskrivelse/?id=146978/">Robert Glueck</a>. The code for the project is hosted <a href="http://git.kompiler.org/pe-gen/">here</a>.</p></li>
     <li><p><strong>Simple Operating System</strong><br/>
-	I worked on this project which was a <a href="http://archive.systems.ethz.ch/www.systems.ethz.ch/education/hs11/aos.html">semester course</a> at <a href="http://www.ethz.ch/index_EN">ETH Zurich</a> during my Erasmus exchange (within my Master's degree). The project aimed at building major components of a microkernel operating system based on the <a href="http://ertos.nicta.com.au/research/l4">L4 microkernel</a> for an <a href="http://en.wikipedia.org/wiki/NSLU2">NSLU2 slug device</a>. Some of the subsystems built as part of the project included</p>
-      <ul>
-	<li>virtual memory system</li>
-	<li>demand paging system</li>
-	<li>system call interface</li>
-	<li>file system</li>
-	<li>process subsytem</li>
-	<li>timer drivers</li>
-	<li>binary loaders</li>
-      </ul>
-	<p>The report which features greater outline of the project is <a href="http://bonii.kompiler.org/shared/report.pdf">here</a>.The code for the project is hosted <a href="https://github.com/bonii/aos">here</a>.<br />
-    If you are interested in working on this project either as thesis work or just for fun, feel free to drop me an email or meet me.</p></li>
+	I worked on this project which was a <a href="http://archive.systems.ethz.ch/www.systems.ethz.ch/education/hs11/aos.html">semester course</a> at <a href="http://www.ethz.ch/index_EN">ETH Zurich</a> during my Erasmus exchange (within my Master's degree). The project aimed at building major components of a microkernel operating system based on the <a href="http://ertos.nicta.com.au/research/l4">L4 microkernel</a> for an <a href="http://en.wikipedia.org/wiki/NSLU2">NSLU2 slug device</a>. Some of the subsystems built as part of the project included the following subsystems viz., virtual memory, demand paging, system call interface, file system, process subsystem, timer drivers, binary loaders. The report with detailed outline of the project is <a href="http://bonii.kompiler.org/shared/report.pdf">here</a>.The code for the project is hosted <a href="https://github.com/bonii/aos">here</a>.</p></li>
   </ul>
 </div>
 
@@ -106,7 +96,7 @@ p {text-align: justify}
       </li>
     </ul>
   <h3>Mentoring experiences</h3>
-  <p>In the past I have co-advised 4 B.Sc and 3 M.Sc thesis students and am currently co-advising 4 M.Sc thesis students.</p>
+  <p>In the past I have co-advised 4 B.Sc and 7 M.Sc thesis students.</p>
   <p style='color:red'>I am looking for interested B.Sc and M.Sc students interested in <a href="http://www.cs.bell-labs.com/who/rob/utah2000.pdf">building systems</a>. If you are hunting for ideas, look at the <a href="https://diku-dk.github.io/sdps/dms/projects">project themes on offer</a> in the DMS group. If you have your own ideas for a project or would like to work on one of the outlined project themes, feel free to email or meet me.</p>
 </div>
 
@@ -140,20 +130,11 @@ p {text-align: justify}
   </ul>
 </div>
 
-<div>
-  <h2 id="talks">Talks</h2>
-  <ul>
-    <li><a href="http://www.diku.dk/~bonii/misc/hiperfit-transactional-partitioning.pdf">Transactional Partitioning talk</a> at the <a href="http://hiperfit.dk/news/2014/11/04/hiperfit-workshop/">HIPERFIT workshop</a></li>
-    <li><a href="http://bonii.kompiler.org/">My Master's thesis defence talk</a> on <a href="#masterthesis">Adaptive Auto-partitioning in distributed transactional data stores</a> at DIKU on November 19, 2012</li>
-    <li><a href="http://bonii.kompiler.org/shared/fourth-futumura-projection-project.pdf">Project defence talk</a> on the <a href="#masterproject">Fourth Futumura projections</a> at DIKU on June 21, 2012</li>
-  </ul>
-</div>
 
 <div>
   <h2 id="personal">Personal</h2>
   <ul>
-    <li><a href="http://www.diku.dk/~bonii/misc/resume.pdf">My CV</a></li>
-    <!--<li><a href="http://bonii.kompiler.org/shared/four-poster-bed.jpg">My really cool bed that I don't have anymore</a></li>-->
+    <li><a href="http://www.diku.dk/~bonii/misc/cv.pdf">My CV</a></li>
     <li><a href="https://github.com/bonii">My Github profile</a></li>
     <li><a href="http://blog.kernelspace.in/">My primary web log</a></li>
     <li><a href="http://stories.kernelspace.in/">My attempts at story telling</a></li>
@@ -163,8 +144,17 @@ p {text-align: justify}
 </div>
 
 <div>
+  <h2 id="talks">Old archived talks</h2>
+  <ul>
+    <li><a href="http://www.diku.dk/~bonii/misc/hiperfit-transactional-partitioning.pdf">Transactional Partitioning talk</a> at the <a href="http://hiperfit.dk/news/2014/11/04/hiperfit-workshop/">HIPERFIT workshop</a></li>
+    <li><a href="http://bonii.kompiler.org/">My Master's thesis defence talk</a> on <a href="#masterthesis">Adaptive Auto-partitioning in distributed transactional data stores</a> at DIKU on November 19, 2012</li>
+    <li><a href="http://bonii.kompiler.org/shared/fourth-futumura-projection-project.pdf">Project defence talk</a> on the <a href="#masterproject">Fourth Futumura projections</a> at DIKU on June 21, 2012</li>
+  </ul>
+</div>
+
+<div>
   <h2 id="updates">Recent Updates</h2>    
-    <p><strong>[16/06/2018]</strong>I had a great time <a href="https://www.youtube.com/watch?v=C44--VmsJGQ">talking</a> about our work on <a href="https://dl.acm.org/authorize?N651748">ReactDB</a> at SIGMOD 2018 in Houston.</p>
+   <p><strong>[16/06/2018]</strong>I had a great time <a href="https://www.youtube.com/watch?v=C44--VmsJGQ">talking</a> about our work on <a href="https://dl.acm.org/authorize?N651748">ReactDB</a> at SIGMOD 2018 in Houston.</p>
   <p><strong>[17/05/2018]</strong>We have <a href="https://diku-dk.github.io/sdps/dms/projects">a list of project themes on offer</a> for interested B.Sc and M.Sc students in the DMS group. Feel free to contact me if you want to work on them.</p>
   <p><strong>[01/11/2017]</strong>I have now graduated and am working as postdoctoral researcher at DIKU.</p>
   <p><strong>[07/06/2015]</strong>Looking forward to the summer internship stint at Microsoft Research, Redmond on <a href="http://research.microsoft.com/en-us/projects/orleans/">Orleans</a>.</p>
@@ -185,6 +175,7 @@ p {text-align: justify}
   <h2 id="non-academic">Non Academic Resources</h2>
   <ul>
     <li><a href="http://web.mit.edu/humor/Computers/real.programmers">Programming in Real World</a></li>
+    <li><a href="http://scholar.harvard.edu/files/mickens/files/thenightwatch.pdf">Systems Programmers aka Night's Watch</a></li>
   </ul>
 </div>
 
